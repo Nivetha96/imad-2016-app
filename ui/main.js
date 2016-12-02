@@ -4,3 +4,7 @@ var button=document.getElementById("button");
 button.onclick=function(){
     content.innerHTML="WELCOME TO MY WEBPAGE";
 };
+var i=document.getElementById("img");
+i.onclick=function(){
+  i.style.left="100px";  
+};
