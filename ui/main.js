@@ -4,7 +4,7 @@ var button=document.getElementById("button");
 button.onclick=function(){
     content.innerHTML="WELCOME TO MY WEBPAGE";
 };
-var i=document.getElementById("img");
+var i=document.getElementById("madi");
 i.onclick=function(){
   i.style.marginLeft="100px";  
 };
