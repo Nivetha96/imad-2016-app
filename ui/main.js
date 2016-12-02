@@ -6,5 +6,5 @@ button.onclick=function(){
 };
 var i=document.getElementById("img");
 i.onclick=function(){
-  i.style.left="100px";  
+  i.style.marginLeft="100px";  
 };
