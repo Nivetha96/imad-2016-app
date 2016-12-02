@@ -1,5 +1,6 @@
 console.log('Loaded!');
 var content=getElemenetById("content");
-content.onclick=function(){
+var button=getElementById("button");
+button.onclick=function(){
     content.innerHTML="WELCOME TO MY WEBPAGE";
 };
