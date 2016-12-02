@@ -5,30 +5,31 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
-var article_one={
+var articles={
+    article_one:{
     title: "article-one",
     heading: "ARTICLE-ONE",
     content:
    ` <div align="center">
 <h1>hello</h1>
 </div>`
-};
-var article_two={
+},
+article_two:{
     title: "article-two",
     heading: "ARTICLE-TWO",
     content:
    ` <div align="center">
 <h1>hello</h1>
 </div>`
-};
-var article_three={
+},
+ article_three:{
     title: "article-three",
     heading: "ARTICLE-THREE",
     content:
    ` <div align="center">
 <h1>hello</h1>
 </div>`
-};
+}};
 function createTemplate(data){
 var title=data.title;
 var heading=data.heading;
@@ -56,17 +57,11 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
-app.get('/article-one',function(req,res){
-    res.send(createTemplate(article_one));
+app.get('/:article_name',function(req,res){
+    var article_name=req.params.article_name;
+    res.send(createTemplate(articles[article_name]));
 });
 
-app.get('/article-two',function(req,res){
-    res.send(createTemplate(article_two));
-});
-
-app.get('/article-three',function(req,res){
-    res.send(createTemplate(article_three));
-});
 
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
