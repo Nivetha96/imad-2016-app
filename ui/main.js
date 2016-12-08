@@ -14,3 +14,18 @@ i.onclick=function(){
 var interval=setInterval(moveRight,50);    
  // i.style.marginLeft="100px";  
 };
+var x=document.getElementById("counter");
+var count=documenet.getElementById("count");
+x.onclick=function(){
+    var request=new XMLHttpRequest();
+    request.onreadystatechange=function(){
+      if(request.readyState===XMLHttpRequest.DONE){
+          if(request.status===200){
+              var counter=request.responseText;
+              count.innerHTML=counter;
+          }
+      }  
+    };
+    request.open('GET','http://nivetha96.imad.hasura-app.io/counter',true);
+    request.send('null');
+};
