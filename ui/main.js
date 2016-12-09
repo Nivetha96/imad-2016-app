@@ -1,4 +1,4 @@
-console.log('Loaded!');
+/*console.log('Loaded!');
 var content=document.getElementById("content");
 var button=document.getElementById("button");
 button.onclick=function(){
@@ -13,7 +13,7 @@ function moveRight(){
 i.onclick=function(){
 var interval=setInterval(moveRight,50);    
  // i.style.marginLeft="100px";  
-};
+};*/
 var x=document.getElementById("counter");
 x.onclick=function(){
     var request=new XMLHttpRequest();
