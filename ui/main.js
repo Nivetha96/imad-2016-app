@@ -21,8 +21,8 @@ x.onclick=function(){
       if(request.readyState===XMLHttpRequest.DONE){
           if(request.status===200){
               var counter=request.responseText;
-              var count=documenet.getElementById("count");
-              count.innerHTML=counter.toString();
+              var span=documenet.getElementById("count");
+              span.innerHTML=counter.toString();
           }
       }  
     };
