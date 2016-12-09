@@ -13,7 +13,7 @@ function moveRight(){
 i.onclick=function(){
 var interval=setInterval(moveRight,50);    
  // i.style.marginLeft="100px";  
-};*/
+};
 var x=document.getElementById("counter");
 x.onclick=function(){
     var request=new XMLHttpRequest();
@@ -28,7 +28,7 @@ x.onclick=function(){
     };
     request.open('GET','http://nivetha96.imad.hasura-app.io/counter',true);
     request.send(null);
-};
+};*/
 var s=document.getElementById("submit");
 s.onclick=function(){
 var n=document.getElementById("name").value;
