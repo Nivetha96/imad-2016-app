@@ -8,9 +8,9 @@ var n=document.getElementById("name").value;
           if(request.status===200){
     var names=request.responseText;
     names=JSON.parse(names);
-    var lists='';
+    var list='';
     for(var i=0;i<names.length;i++){
-        lists +='<li>'+names[i]+'</li>';
+        list +='<li>'+names[i]+'</li>';
         
     }
     var ul=document.getElementById("namelist");
