@@ -29,3 +29,15 @@ x.onclick=function(){
     request.open('GET','http://nivetha96.imad.hasura-app.io/counter',true);
     request.send(null);
 };
+var n=document.getElementById("name").value;
+var s=document.getElementById("submit");
+s.onclick=function(){
+    var names=["name1","name2","name3"];
+    var list='';
+    for(var i=0;i<nmes.length;i++){
+        list += '<li>'+names[i]+'<li>';
+        
+    }
+    var ul=document.getElementById("namelist");
+    ul.innerHTML=list;
+};
