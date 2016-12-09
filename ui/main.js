@@ -49,7 +49,7 @@ var n=document.getElementById("name").value;
           }
       }  
     };
-    request.open('GET','http://nivetha96.imad.hasura-app.io/ui/personal.html/submit?name='+name,true);
+    request.open('GET','http://nivetha96.imad.hasura-app.io/ui/personal.html/submit?name='+n,true);
     request.send(null);
 
 };
