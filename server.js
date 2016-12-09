@@ -74,8 +74,17 @@ app.get('/ui/main.js', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'main.js'));
 });
 var names=[];
-app.get('/ui/personal.html/submit/:name',function(req,res){
+//method-1
+/*app.get('/ui/personal.html/submit/:name',function(req,res){
     var name=req.params.name;
+    
+    names.push(name);
+    
+    res.send(JSON.stringify(names));
+});*/
+//method-2
+app.get('/ui/personal.html/submit',function(req,res){
+    var name=req.query.name;
     
     names.push(name);
     
