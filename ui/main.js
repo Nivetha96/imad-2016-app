@@ -29,10 +29,10 @@ x.onclick=function(){
     request.open('GET','http://nivetha96.imad.hasura-app.io/counter',true);
     request.send(null);
 };
-
-var n=document.getElementById("name").value;
 var s=document.getElementById("submit");
-s.onclick=function(){
+s.onsubmit=function(){
+var n=document.getElementById("name").value;
+
     var request=new XMLHttpRequest();
     request.onreadystatechange=function(){
       if(request.readyState===XMLHttpRequest.DONE){
