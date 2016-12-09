@@ -30,7 +30,7 @@ x.onclick=function(){
     request.send(null);
 };
 var s=document.getElementById("submit");
-s.onsubmit=function(){
+s.onclick=function(){
 var n=document.getElementById("name").value;
 
     var request=new XMLHttpRequest();
