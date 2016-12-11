@@ -70,6 +70,11 @@ app.get('/ui/personal.html', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'personal.html'));
 });
 
+
+app.get('/ui/mainn.js', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'mainn.js'));
+});
+
 app.get('/ui/main.js', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'main.js'));
 });
