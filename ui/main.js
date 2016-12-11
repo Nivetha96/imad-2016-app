@@ -31,7 +31,7 @@ x.onclick=function(){
 };*/
 var s=document.getElementById("submit");
 s.onclick=function(){
-var n=document.getElementById("name").value;
+var n=document.getElementById("hobby").value;
 
     var request=new XMLHttpRequest();
     request.onreadystatechange=function(){
